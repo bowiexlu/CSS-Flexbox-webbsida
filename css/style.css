@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+.flex-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blue;
+    padding: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    .flex-container {
+        display: block;
+    }
+
+    .flex-container div {
+        display: flex;
+    }    
+}
+
+.flex-container div {
+    width: 33.3%;
+    background-color: white;
+    padding: 20px;
+
+}
