@@ -1,34 +1,106 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <title>CSS Flexbox</title>
+    <title>Uppgift 3 - CSS Flexbox-webbsida</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>CSS Flexbox träning</h1>
-
-    <div class="flex-container">
-        <div>Min första kolumn: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dui nisi, laoreet id orci vel, hendrerit porttitor nisi. Aenean vitae mattis eros,
-            in egestas dui. Donec luctus eleifend ligula id placerat. Sed id erat sit amet dolor gravida tempus. Proin tempor dolor nec est tincidunt, at dapibus risus posuere.
-            Pellentesque gravida imperdiet gravida. Ut vel porttitor arcu, nec placerat lorem. Mauris pharetra urna eros, a dignissim eros iaculis non
-            Morbi ut tempus tortor. Nam mollis diam massa. Morbi efficitur ullamcorper arcu, a aliquam arcu accumsan id. Sed viverra dolor non eros egestas, ut scelerisque neque 
-            fermentum. Etiam sed nisi urna. Nam turpis tortor, suscipit quis commodo vel, viverra et ligula. Praesent at urna lobortis, facilisis lectus in, tristique magna. 
-            Proin viverra posuere justo consectetur pellentesque. bibendum efficitur tortor eu, pulvinar lacinia nisi. Nam lacinia vulputate hendrerit. Fusce eget ante vestibulum,
-            varius ligula sit amet, aliquam nulla.</div>
-        <div>Min andra kolumn: Nullam scelerisque leo nec sagittis maximus. Vivamus sagittis pellentesque velit a auctor. Maecenas maximus magna magna, quis maximus ex varius ut. Suspendisse risus
-            erat, tempor non auctor sit amet, faucibus vel ex. Aliquam erat volutpat. Mauris bibendum ligula nunc, eget maximus mi tempor sit amet. Mauris vel nibh in felis tristique 
-            bibendum non quis nulla. Fusce sit amet urna purus. Cras hendrerit facilisis eros non tincidunt. Duis mollis sed ipsum quis feugiat. Curabitur blandit erat vel ipsum 
-            porta luctus. Cras blandit est eu tristique posuere. Maecenas commodo ex tincidunt dignissim venenatis. Curabitur facilisis velit quam, non aliquam mi pellentesque 
-            quis. Aenean eget placerat mauris. Aenean pharetra rutrum libero nec mollis.</div>
-        <div>Min tredje kolumn: n posuere arcu vitae arcu semper, a iaculis erat pulvinar. Morbi fringilla lectus vel lectus malesuada, vitae sagittis sem eleifend. Interdum et malesuada
-            fames ac ante ipsum primis in faucibus. Aenean ut metus metus. Morbi aliquet velit eget est facilisis, sed vestibulum erat maximus. Vestibulum iaculis elit 
-            ac ligula tempus, a maximus nunc laoreet. Cras varius massa velit, gravida ultrices odio convallis et. Integer massa mi, gravida hendrerit volutpat id, 
-            sodales pellentesque lorem. Ut ligula nisl, scelerisque at libero id, tempus fringilla ante. Curabitur sed risus at nibh auctor congue. Sed velit augue,</div>
-     
+    <div id="navigation">
+        <div class="container">
+            <div id="site-name">
+                Min hemsida
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html" class="active">Framsida</a></li>
+                    <li><a href="#">Om mig</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
+
+    <div id="hero">
+        <div class="container">
+            <div id="hero-text">
+                <h1>Det här är min hemsida</h1>
+                <p>Här kommer en kort sammanfattning över vad min hemsida handlar om.</p>
+                <p><a href="#" class="button">Om mig</a></p>
+            </div>
+            <div id="hero-pic">
+                <img src="image/profile-pic.webp" alt="En portfolio">
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio">
+        <h2>Min portfolio</h2>
+        <div class="container">
+            <div class="first">
+                <img src="image/portfolio-castle.webp" alt="project 1">
+                <h3>Ett projekt</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet porta mi,
+                        varius placerat odio. Maecenas tristique quam in accumsan tristique. Aenean 
+                        iaculis ex metus, at molis sem iaculis vitae.</p>
+                <a href="#" class="button">Lär mer</a>
+            </div>
+            <div class="second">
+                <img src="image/portfolio-unicorn.webp" alt="project 2">
+                <h3>Ett annat projekt</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet porta mi,
+                    varius placerat odio. Maecenas tristique quam in accumsan tristique. Aenean 
+                    iaculis ex metus, at mollis sem iaculis vitae.</p>
+                <a href="#" class="button">Lär mer</a>
+            </div>
+            <div class="third">
+                <img src="image/portfolio-waterfall.webp" alt="project 3">
+                <h3>Ett till projekt</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet porta mi,
+                    varius placerat odio. Maecenas tristique quam in accumsan tristique. Aenean 
+                    iaculis ex metus, at mollis sem iaculis vitae.</p>
+                <a href="#" class="button">Lär mer</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="contact">
+                <div class="info">
+                    <h4>Kontaktuppgifter</h4>
+                    <div class="address">
+                        <p>Gatuadress 1<br>000000 Postanstalt</p>
+                    </div>
+                        
+                    <div class="telephone">
+                        <p>+358 40 123 4567</p>
+                    </div>
+                </div>
+                <br>
+                <div class="copyright">
+                    <p>&copy; 2024 Min hemsida</p>
+
+                </div>
+            </div>
+            <div class="social-media">
+                <h4>Sociala medier</h4>
+                <div class="link">
+                    <a href="https://facebook.com/">Facebook</a><br>
+                    <a href="https://facebook.com/">Insgram</a><br>
+                    <a href="https://facebook.com/">Linkedln</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
